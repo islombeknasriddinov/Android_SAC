@@ -3,6 +3,7 @@ package com.example.android_sac.fragment.auth.signup
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.android_sac.R
 import com.example.android_sac.databinding.FragmentSignupBinding
@@ -12,6 +13,9 @@ class SignupFragment : Fragment(R.layout.fragment_signup) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.tvSignin.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 
 }

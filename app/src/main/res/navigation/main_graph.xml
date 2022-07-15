@@ -12,6 +12,18 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.android_sac.fragment.main.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.android_sac.fragment.main.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
         android:id="@+id/navigation_history"
         android:name="com.example.android_sac.fragment.main.history.HistoryFragment"
         android:label="fragment_history"
