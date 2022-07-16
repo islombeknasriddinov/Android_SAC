@@ -24,8 +24,13 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFargment.navController
 
         val navGraph = navController.navInflater.inflate(R.navigation.nav_graph)
+
+
+
         when {
             AuthManager.isAuthorized -> {
+                navGraph.setStartDestination(R.id.splashFlowFragment)
+
                 navGraph.setStartDestination(R.id.mainFlowFragment)
             }
             !AuthManager.isAuthorized -> {
